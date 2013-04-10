@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<title>jQuery hoverme! plugin demo</title>
+	
+	<link rel="stylesheet" href="styles/demo.css" type="text/css" media="all" />
+	
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="scripts/jquery.hoverme.js"></script>
+	
+	<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".hoverme-block").hoverme({
+				opacity: 0.8
+			});
+		}); 
+	</script>
+	
+</head>
+<body>
+	<div class="container">
+	
+		<h1>jQuery.hoverme demo page</h1>
+	
+		<div class="hoverme-block">
+			<div class="hoverme-overlay">
+				<a href="http://www.marvinlabs.com" class="hoverme-caption">
+					<span>The Matterhorn peak</span>
+				</a>
+			</div>
+			<div class="hoverme-backdrop">
+				<a href="http://www.marvinlabs.com">
+					<img src="images/01.jpg">
+				</a>
+			</div>
+		</div>
+		
+		<div class="hoverme-block">
+			<div class="hoverme-overlay">
+				<a href="http://www.marvinlabs.com" class="hoverme-caption">
+					<span>Le Louvre</span>
+				</a>
+			</div>
+			<div class="hoverme-backdrop">
+				<a href="http://www.marvinlabs.com">
+					<img src="images/02.jpg">
+				</a>
+			</div>
+		</div>
+		
+		<div class="hoverme-block">
+			<div class="hoverme-overlay">
+				<a href="http://www.marvinlabs.com" class="hoverme-caption">
+					<span>Somewhere in the Alps</span>
+				</a>
+			</div>
+			<div class="hoverme-backdrop">
+				<a href="http://www.marvinlabs.com">
+					<img src="images/03.jpg">
+				</a>
+			</div>
+		</div>
+		
+		<h2>Some more info</h2>
+		
+		<p>The markup is basically:</p>
+		
+		<pre>
+&lt;div class="hoverme-block"&gt;
+	&lt;div class="hoverme-overlay"&gt;
+		&lt;a href="your link here" class="hoverme-caption"&gt;
+			&lt;span&gt;The caption you wanna show&lt;/span&gt;
+		&lt;/a&gt;
+	&lt;/div&gt;
+	&lt;div class="hoverme-backdrop"&gt;
+		&lt;a href="http://www.marvinlabs.com"&gt;
+			The content of your block which will always be visible
+		&lt;/a&gt;
+	&lt;/div&gt;
+&lt;/div&gt;		
+		</pre>
+		
+		<p>To enable the effect, add the following piece of script to your page:</p>
+		
+		<pre>
+&lt;script type="text/javascript"&gt;
+	jQuery(document).ready(function($) {
+		$(".hoverme-block").hoverme({
+			opacity: 0.8
+		});
+	}); 
+&lt;/script&gt;	
+		</pre>
+
+		<p>Apart from that, just include the CSS and the script in your page and you're good to go.</p>
+	</div>
+</body>
+</html>
